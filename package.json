@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "obsidian-open-in-github-plugin",
 	"version": "1.0.1",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "This is an Obsidian plugin designed to open project or files directly in GitHub via your browser.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
