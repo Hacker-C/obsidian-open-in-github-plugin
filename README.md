@@ -10,7 +10,6 @@ This is an Obsidian plugin designed to open projects or files directly in GitHub
 1. Download Release Files:
     - main.js
     - manifest.json
-    - styles.css (if applicable)
 2. Copy Files to Plugin Folder:
     Paste the downloaded files into your vault’s plugin folder: `VaultFolder/.obsidian/plugins/open-in-github`
 3. Enable the Plugin:

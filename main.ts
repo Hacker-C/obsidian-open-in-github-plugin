@@ -35,8 +35,8 @@ export default class OpenInGitHubPlugin extends Plugin {
     // add icon
     addIcon(CONSTS.TITLE_ID, customIcon)
 
-    // Left open-in-github button
-    const ribbonIconEl = this.addRibbonIcon(CONSTS.TITLE_ID, CONSTS.TITLE, this.openGitHub)
+    // left open-in-github button
+    this.addRibbonIcon(CONSTS.TITLE_ID, CONSTS.TITLE, this.openGitHub)
 
     // add file menu
     this.registerEvent(
@@ -61,27 +61,7 @@ export default class OpenInGitHubPlugin extends Plugin {
         });
       })
     );
-
-    // Perform additional things with the ribbon
-    ribbonIconEl.addClass('my-plugin-ribbon-class')
-
-    // Bottom right open-file-in-github button
-    // This adds a status bar item to the bottom of the app. Does not work on mobile apps.
-    // const statusBarItemEl = this.addStatusBarItem();
-    // const parser = new DOMParser()
-    // const svgDoc = parser.parseFromString(customIcon(24, 80), 'image/svg+xml')
-    // const svgElement = svgDoc.documentElement as unknown as HTMLElement
-    // svgElement.setAttribute('width', '16');
-    // svgElement.setAttribute('height', '16');
-    // statusBarItemEl.appendChild(svgElement);
-    // statusBarItemEl.addEventListener('click', e => openGitHub(e, true))
-
-    // When registering intervals, this function will automatically clear the interval when the plugin is disabled.
-    this.registerInterval(window.setInterval(() => console.log('setInterval'), 5 * 60 * 1000))
   }
-
-  
-  onunload() { }
 
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData())
