@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-open-in-github-plugin",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "This is an Obsidian plugin designed to open project or files directly in GitHub via your browser.",
 	"main": "main.js",
 	"scripts": {
