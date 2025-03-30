@@ -1,7 +1,7 @@
 {
 	"id": "open-in-github",
 	"name": "Open in GitHub",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"minAppVersion": "0.15.0",
 	"description": "Open the current project or file in github.com.",
 	"author": "Murphy Chen",
